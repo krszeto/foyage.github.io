@@ -14,7 +14,7 @@ function FoyageHome() {
         <p className="read-the-docs">
           Let's start planning your next journey!
         </p>
-        <button onClick={() => navigate('/register')}>
+        <button onClick={() => navigate('/foyage.github.io/register')}>
           Start
         </button>
       </div>

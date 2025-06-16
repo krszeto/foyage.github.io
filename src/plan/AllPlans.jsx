@@ -81,7 +81,7 @@ function AllPlans() {
                   component="button"
                   variant="body2"
                   onClick={() => {
-                    navigate("/trip/" + trip.id);
+                    navigate("/foyage.github.io/trip/" + trip.id);
                   }}
                 >
                   See more

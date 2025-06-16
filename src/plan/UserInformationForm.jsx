@@ -10,7 +10,6 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import Button from "@mui/material/Button";
-import { useNavigate } from "react-router-dom";
 
 const USER = gql`
   query userPreferences($userId: ID!) {
@@ -142,7 +141,6 @@ const UPDATE = gql`
 `;
 
 function UserInformationForm({ userId, onSaveComplete, onCancel, saveButtonTextOverride }) {
-  const navigate = useNavigate();
   const cuisineData = useQuery(CUISINES);
   const toleranceForQueuing = useQuery(TOLERANCE);
   const [saveCreate, { saveCreateData, saveCreateLoading, saveCreateError }] =

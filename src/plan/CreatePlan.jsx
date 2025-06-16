@@ -208,7 +208,7 @@ function CreatePlan() {
       <UserInformation userId={id} />
       <TripInformationForm
         userId={id}
-        onSaveComplete={(tripId) => navigate("/trip/" + tripId)}
+        onSaveComplete={(tripId) => navigate("/foyage.github.io/trip/" + tripId)}
         saveButtonTextOverride={"Next"}
       />
       {/* <div className="card">

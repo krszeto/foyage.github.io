@@ -10,7 +10,7 @@ function RegisterUser() {
       <h2>Tell us a bit about yourself...</h2>
       <UserInformationForm
         saveButtonTextOverride="Next"
-        onSaveComplete={(userId) => navigate("/user/" + userId + "/trip/new")}
+        onSaveComplete={(userId) => navigate("/foyage.github.io/user/" + userId + "/trip/new")}
       />
     </>
   );

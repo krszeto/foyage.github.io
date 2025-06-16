@@ -20,8 +20,8 @@ import RegisterUser from "./plan/RegisterUser.jsx";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
 const client = new ApolloClient({
-  // uri: "http://localhost:8000/graphql/",
-  uri: "https://tbbchpcgyn.us-west-2.awsapprunner.com/graphql/",
+  uri: "http://localhost:8000/graphql/",
+  // uri: "https://tbbchpcgyn.us-west-2.awsapprunner.com/graphql/",
   cache: new InMemoryCache(),
 });
 
@@ -29,10 +29,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
       <Route path="/foyage.github.io/" element={<FoyageHome />} />
-      <Route path="/foyage.github.io/user/:id/trip/new" element={<CreatePlan />} />
-      <Route path="/foyage.github.io/trip/:trip_id" element={<Plan />} />
-      <Route path="/foyage.github.io/register" element={<RegisterUser />} />
-      <Route path="/foyage.github.io/trips/all" element={<AllPlans />} />
+      <Route path="/foyage.github.io/user/:id/trip/new/" element={<CreatePlan />} />
+      <Route path="/foyage.github.io/trip/:trip_id/" element={<Plan />} />
+      <Route path="/foyage.github.io/register/" element={<RegisterUser />} />
+      <Route path="/foyage.github.io/trips/all/" element={<AllPlans />} />
     </Route>
   )
 );
